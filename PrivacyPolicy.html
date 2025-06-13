@@ -3,241 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası</title>
+    <title>Hi - İngilizce Kelime Öğrenme Uygulaması</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            padding: 1em;
-            line-height: 1.8;
-            max-width: 800px;
-            margin: auto;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
             color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
-        h1, h2, h3 {
-            color: #2c3e50;
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
+        
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 25px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+        }
+        
         h1 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
+            font-size: 3em;
+            color: #2c3e50;
+            margin-bottom: 20px;
         }
-        h2 {
-            font-size: 1.5em;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
+        
+        .tagline {
+            font-size: 1.3em;
+            color: #7f8c8d;
+            margin-bottom: 40px;
         }
-        h3 {
-            font-size: 1.2em;
-            margin-top: 1.2em;
-            margin-bottom: 0.5em;
-        }
-        p {
-            margin-bottom: 1.2em;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 0.8em;
-        }
-        a {
-            color: #3498db;
+        
+        .download-btn {
+            background: #000;
+            color: white;
             text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.2s;
         }
-        a:hover {
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+        }
+        
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .footer {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .footer h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        .footer a:hover {
             text-decoration: underline;
         }
-        .highlight {
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-left: 4px solid #3498db;
-            margin: 1.5em 0;
-        }
-        .admob-section {
-            background-color: #fff3cd;
-            padding: 15px;
-            border-left: 4px solid #ffc107;
-            margin: 1.5em 0;
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
-
-    <h1>Gizlilik Politikası</h1>
-    <p>Son güncelleme: 2025-06-14</p>
-
-    <div class="highlight">
-        <p>Hi ("Biz", "Bize", "Bizim"), Hi mobil uygulaması ("Uygulama") aracılığıyla toplanan kişisel bilgilerinizin gizliliğini korumayı taahhüt eder. Bu gizlilik politikası, hangi bilgileri topladığımızı, bu bilgileri nasıl kullandığımızı ve paylaştığımızı açıklar.</p>
+    <div class="container">
+        <div class="hero">
+            <div class="app-icon">Hi</div>
+            <h1>Hi - İngilizce Kelime Öğrenme</h1>
+            <p class="tagline">İngilizce kelime dağarcığınızı geliştirmenin en etkili yolu</p>
+            <a href="https://apps.apple.com/app/your-app-id" class="download-btn">
+                📱 App Store'dan İndirin
+            </a>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Kapsamlı Kelime Havuzu</h3>
+                <p>A1'den C2'ye kadar binlerce kelime ile İngilizce seviyenizi artırın. Oxford 3000 kelime listesi ve kategorik öğrenme.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Kişiselleştirilmiş Öğrenme</h3>
+                <p>Seviyenize uygun kelimeler ve kişisel ilerleme takibi ile daha etkili öğrenin.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Hızlı ve Etkili</h3>
+                <p>Günde sadece 10 dakika ile kelime dağarcığınızı sistematik olarak geliştirin.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>İlerleme Takibi</h3>
+                <p>Öğrendiğiniz kelimeleri takip edin ve başarılarınızı görün. Motivasyonunuzu yüksek tutun.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Çoklu Kategori</h3>
+                <p>İş, seyahat, günlük yaşam ve daha fazlası... İhtiyacınıza göre kelime öğrenin.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Offline Çalışma</h3>
+                <p>İnternet bağlantısı olmadan da kelime çalışabilir, her yerde öğrenmeye devam edebilirsiniz.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h3>İletişim & Destek</h3>
+            <p>
+                <a href="mailto:support@haintelligencesoftware.com">📧 Destek</a>
+                <a href="https://haintelligencesoftware.github.io/HiApp/PrivacyPolicy.html">🛡️ Gizlilik Politikası</a>
+                <a href="#terms">📄 Kullanım Şartları</a>
+            </p>
+            <p style="margin-top: 20px; color: #7f8c8d;">
+                © 2025 HaIntelligence Software. Tüm hakları saklıdır.
+            </p>
+        </div>
     </div>
-
-    <h2>1. Toplanan Bilgiler</h2>
-    <p>Uygulama, aşağıdaki bilgileri toplar:</p>
-    <ul>
-        <li><strong>E-posta Adresi:</strong> Kullanıcı hesabı oluşturmak ve sizinle iletişim kurmak için e-posta adresinizi talep ederiz.</li>
-        <li><strong>Dil Tercihi:</strong> Uygulamayı tercih ettiğiniz dilde kullanmanız için dil seçiminizi kaydederiz.</li>
-        <li><strong>Cinsiyet:</strong> Kullanıcı deneyimini kişiselleştirmek ve istatistiksel analizler yapmak için cinsiyet bilgisini toplarız.</li>
-        <li><strong>Doğum Tarihi:</strong> Yaşınıza uygun içerikler sunmak ve yasal gerekliliklere uyum sağlamak için doğum tarihinizi talep ederiz.</li>
-    </ul>
-
-    <h3>1.1 Reklam ve Analitik Veriler</h3>
-    <div class="admob-section">
-        <p>Uygulamamızda Google AdMob reklamları görüntülenmekte olup, bu hizmet aşağıdaki verileri otomatik olarak toplayabilir:</p>
-        <ul>
-            <li><strong>Cihaz Tanımlayıcıları:</strong> Reklam kimliği (IDFA), cihaz modeli ve işletim sistemi bilgileri</li>
-            <li><strong>Konum Bilgileri:</strong> Yaklaşık konum (şehir/ülke düzeyinde) - kesin konum toplanmaz</li>
-            <li><strong>Uygulama Kullanım Verileri:</strong> Hangi ekranları ziyaret ettiğiniz, uygulama kullanım süreleri</li>
-            <li><strong>Reklam Etkileşim Verileri:</strong> Hangi reklamlara tıkladığınız, reklam görüntüleme süreleri</li>
-            <li><strong>Teknik Veriler:</strong> IP adresi, tarayıcı türü, internet bağlantı bilgileri</li>
-        </ul>
-    </div>
-
-    <h2>2. Bilgilerin Kullanım Amacı</h2>
-    <p>Toplanan bilgiler aşağıdaki amaçlarla kullanılır:</p>
-    <ul>
-        <li><strong>E-posta Adresi:</strong>
-            <ul>
-                <li>Hesap oluşturma ve yönetme.</li>
-                <li>Uygulama ile ilgili önemli bildirimler gönderme.</li>
-                <li>Kullanıcı desteği sağlama.</li>
-                <li>Uygulama güncellemeleri ve yeni özellikler hakkında bilgilendirme.</li>
-            </ul>
-        </li>
-        <li><strong>Dil Tercihi:</strong>
-            <ul>
-                <li>Uygulamayı tercih ettiğiniz dilde kullanmanızı sağlama.</li>
-            </ul>
-        </li>
-        <li><strong>Cinsiyet:</strong>
-            <ul>
-                <li>Kullanıcı deneyimini kişiselleştirme.</li>
-                <li>İstatistiksel analizler ve raporlama.</li>
-            </ul>
-        </li>
-        <li><strong>Doğum Tarihi:</strong>
-            <ul>
-                <li>Yaşınıza uygun içerikler sunma.</li>
-                <li>Yasal gerekliliklere uyum sağlama (örneğin, 13 yaş altı kullanıcıların kaydını engelleme).</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h3>2.1 Reklam Verilerinin Kullanımı</h3>
-    <div class="admob-section">
-        <p>Google AdMob tarafından toplanan veriler şu amaçlarla kullanılır:</p>
-        <ul>
-            <li>Size daha alakalı reklamlar göstermek</li>
-            <li>Reklam performansını ölçmek ve iyileştirmek</li>
-            <li>Reklam sahteciliğini önlemek</li>
-            <li>Uygulama performansını analiz etmek</li>
-        </ul>
-    </div>
-
-    <h2>3. Bilgilerin Paylaşımı</h2>
-    <p>Toplanan bilgiler, aşağıdaki durumlar dışında üçüncü taraflarla paylaşılmaz:</p>
-    <ul>
-        <li><strong>Yasal Zorunluluklar:</strong> Yasa düzenleyicilerin talepleri doğrultusunda bilgiler paylaşılabilir.</li>
-        <li><strong>Hizmet Sağlayıcılar:</strong> E-posta gönderme, analiz ve dil desteği gibi hizmetleri destekleyen üçüncü taraf hizmet sağlayıcılar.</li>
-        <li><strong>Reklam Ortakları:</strong> Google AdMob ve onun reklam ağı ortakları ile anonim kullanım verileri paylaşılabilir.</li>
-    </ul>
-
-    <h3>3.1 Google AdMob Veri Paylaşımı</h3>
-    <div class="admob-section">
-        <p>Google AdMob ile paylaşılan veriler:</p>
-        <ul>
-            <li>Tamamen anonim ve toplulaştırılmış verilerdir</li>
-            <li>Kişisel kimlik bilgileriniz (isim, e-posta vb.) reklam ağları ile paylaşılmaz</li>
-            <li>Veriler sadece reklam gösterimi ve performans ölçümü için kullanılır</li>
-        </ul>
-        <p><strong>Google'ın Gizlilik Politikası:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-        <p><strong>AdMob'un Veri Kullanımı:</strong> <a href="https://support.google.com/admob/answer/6128543" target="_blank">https://support.google.com/admob/answer/6128543</a></p>
-    </div>
-
-    <h2>4. Kullanıcı Kontrolleri ve Tercihler</h2>
-    <div class="admob-section">
-        <h3>4.1 Reklam Kişiselleştirme Kontrolü</h3>
-        <p>Kişiselleştirilmiş reklamları kontrol etmek için:</p>
-        <ul>
-            <li><strong>iOS:</strong> Ayarlar → Gizlilik ve Güvenlik → Apple Advertising → "Kişiselleştirilmiş Reklamlar"ı kapatabilirsiniz</li>
-            <li><strong>Google Ayarları:</strong> <a href="https://adssettings.google.com/" target="_blank">https://adssettings.google.com/</a> adresinden reklam tercihlerinizi yönetebilirsiniz</li>
-        </ul>
-        <p><strong>Not:</strong> Bu ayarlar reklamların kişiselleştirilmesini engeller ancak reklam gösterimini tamamen durdurmaz.</p>
-    </div>
-
-    <h2>5. Çerezler ve Takip Teknolojileri</h2>
-    <div class="admob-section">
-        <p>Uygulamamız aşağıdaki takip teknolojilerini kullanır:</p>
-        <ul>
-            <li><strong>Google AdMob SDK:</strong> Reklam gösterimi ve performans takibi</li>
-            <li><strong>Analytics Çerezleri:</strong> Kullanıcı davranışı analizi</li>
-            <li><strong>Performans İzleme:</strong> Uygulama performansı ve hata takibi</li>
-        </ul>
-        <p>Bu teknolojiler kullanıcı deneyimini iyileştirmek, reklamların etkinliğini ölçmek ve teknik sorunları tespit etmek amacıyla kullanılır.</p>
-    </div>
-
-    <h2>6. Veri Güvenliği</h2>
-    <p>Kişisel bilgilerinizin güvenliği bizim için önemlidir. Verilerinizi korumak için makul önlemler alıyoruz, ancak internet üzerinden veri iletiminin %100 güvenli olmadığını lütfen unutmayın.</p>
-
-    <h3>6.1 Uluslararası Veri Transferi</h3>
-    <div class="admob-section">
-        <p>Reklam verileri Google'ın dünya çapındaki sunucularında işlenebilir. Bu işlemler:</p>
-        <ul>
-            <li>GDPR ve diğer veri koruma yasalarına uygun yapılır</li>
-            <li>Güvenli şifreleme protokolleri kullanılır</li>
-            <li>Veri minimizasyonu ilkelerine uygun olarak gerçekleştirilir</li>
-        </ul>
-    </div>
-
-    <h2>7. Veri Saklama ve Silme</h2>
-    <p>Kişisel bilgileriniz, hesabınız aktif olduğu sürece saklanır.</p>
-    
-    <h3>7.1 Reklam Verilerinin Saklanması</h3>
-    <div class="admob-section">
-        <p>Google AdMob tarafından toplanan veriler:</p>
-        <ul>
-            <li>Çoğu reklam verisi 90 gün sonra otomatik olarak silinir</li>
-            <li>Bazı toplulaştırılmış veriler daha uzun süre saklanabilir</li>
-            <li>Hesabınızı sildiğinizde, kişisel verilerinizle ilişkili reklam verileri de silinir</li>
-        </ul>
-    </div>
-
-    <h2>8. Çocukların Gizliliği</h2>
-    <p>Bu uygulama, 13 yaşın altındaki çocuklardan bilinçli olarak kişisel veri toplamaz. Çocuğunuzun bize kişisel bilgiler gönderdiğini fark ederseniz, lütfen bizimle iletişime geçin.</p>
-    
-    <div class="admob-section">
-        <h3>8.1 COPPA Uyumluluğu</h3>
-        <p>13 yaş altındaki kullanıcılar için:</p>
-        <ul>
-            <li>Kişiselleştirilmiş reklamlar gösterilmez</li>
-            <li>Sadece yaşa uygun, genel reklamlar gösterilir</li>
-            <li>Ek veri toplama işlemleri gerçekleştirilmez</li>
-            <li>Ebeveyn onayı olmadan hassas veriler işlenmez</li>
-        </ul>
-    </div>
-
-    <h2>9. Politika Değişiklikleri</h2>
-    <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Değişiklikler yürürlüğe girdiğinde, bu sayfada güncel bir sürüm yayınlayacağız. Değişiklikleri takip etmek için bu sayfayı düzenli olarak kontrol etmenizi öneririz.</p>
-    
-    <div class="admob-section">
-        <p><strong>Önemli değişiklikler:</strong> AdMob entegrasyonu ve reklam politikalarında yapılan değişiklikler uygulama içinde de bildirilecektir.</p>
-    </div>
-
-    <h2>10. İletişim</h2>
-    <p>Bu gizlilik politikasıyla ilgili herhangi bir sorunuz varsa, lütfen <a href="mailto:support@haintelligencesoftware.com">support@haintelligencesoftware.com</a> adresinden bizimle iletişime geçin.</p>
-    
-    <div class="admob-section">
-        <h3>10.1 Reklam İle İlgili Şikayetler</h3>
-        <p>Reklamlarla ilgili sorunlar için:</p>
-        <ul>
-            <li>Uygunsuz reklam içeriği bildirimi</li>
-            <li>Reklam kişiselleştirme sorunları</li>
-            <li>Veri kullanımı ile ilgili endişeler</li>
-        </ul>
-        <p>Yukarıdaki e-posta adresinden bizimle iletişime geçebilirsiniz.</p>
-    </div>
-
-    <div class="highlight">
-        <p><strong>Web Sitesi:</strong> <a href="https://haintelligencesoftware.github.io/HiApp/" target="_blank">https://haintelligencesoftware.github.io/HiApp/</a></p>
-        <p><strong>Son Güncelleme:</strong> 14 Haziran 2025</p>
-    </div>
-
 </body>
 </html>
